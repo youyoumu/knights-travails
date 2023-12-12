@@ -38,8 +38,6 @@ class Board
   def get_coordinate_distance(start_coordinate, target_coornidate)
     a = target_coornidate[0] - start_coordinate[0]
     b = target_coornidate[1] - start_coordinate[1]
-    a = a.abs
-    b = b.abs
     Math.sqrt(a**2 + b**2)
   end
 end
