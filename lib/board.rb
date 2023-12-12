@@ -25,9 +25,7 @@ class Board
         !surrounding_corner_coordinate.include?(coordinate)
       )
       if best_coordinate == start_coordinate.coordinate
-        best_coordinate_distance = 999
         best_coordinate = coordinate if (
-          current_coordinate_distance < best_coordinate_distance &&
           !surrounding_coordinate.include?(coordinate) &&
           !surrounding_corner_coordinate.include?(coordinate)
         )
